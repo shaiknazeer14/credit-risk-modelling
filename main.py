@@ -3,8 +3,8 @@ import anthropic
 from prediction_helper import predict
 
 # ── Page config ──────────────────────────────────────────────────────────────
-st.set_page_config(page_title="Lauki Finance: Credit Risk Modelling", page_icon="📊")
-st.title("Lauki Finance: Credit Risk Modelling")
+st.set_page_config(page_title="RiskRadar Finance: Credit Risk Modelling", page_icon="📊")
+st.title("RiskRadar Finance: Credit Risk Modelling")
 
 # ── Input form ───────────────────────────────────────────────────────────────
 row1 = st.columns(3)
@@ -53,7 +53,7 @@ def get_ai_explanation(probability, credit_score, rating,
     decision = "APPROVED" if rating in ["Good", "Excellent"] else "REJECTED / HIGH RISK"
 
     prompt = f"""
-You are a credit risk analyst at Lauki Finance. A loan application was evaluated by our ML model.
+You are a credit risk analyst at RiskRadar Finance. A loan application was evaluated by our ML model.
 Explain the result clearly to a bank officer in 4–6 bullet points. Be specific — mention actual numbers.
 Use plain English, no jargon.
 
